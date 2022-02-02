@@ -19,6 +19,7 @@ const Gallery: React.FC<Props> = ({product}) => {
             borderWidth={currentImage === index ? "2px" : "1px"}
             borderColor={currentImage === index ? "secondary.500" : "blackAlpha.400"}
             boxSize="48px" padding="2px"
+            cursor="pointer"
             onClick={() => {setCurrentImage(index)}}
           >
             <Image

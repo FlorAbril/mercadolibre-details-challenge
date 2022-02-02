@@ -28,6 +28,7 @@ export default extendTheme({
     },
     secondary: {
       ...theme.colors.messenger,
+      700: "#00a650",
       100: theme.colors.messenger[50],
       50: `rgba(65,137,230,.15)`,
     },
