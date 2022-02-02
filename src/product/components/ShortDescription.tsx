@@ -14,7 +14,7 @@ const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
+const ShortDescription: React.FC<Props> = ({product = mock.product}) => {
   const [isLiked, setIsLiked] = React.useState(false)
   return (
     <Box border="1px solid rgb(0 0 0 / 10%)" borderRadius={8} padding="24px 16px">
@@ -39,4 +39,4 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
   )
 }
 
-export default ProductDetail;
+export default ShortDescription;

@@ -3,7 +3,7 @@ import React from "react";
 import {Product} from "../types";
 import mock from "../mock";
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
-import ProductDetail from "../components/ProductDetail";
+import ShortDescription from "../components/ShortDescription";
 import Gallery from "../components/Gallery";
 
 interface Props {
@@ -19,7 +19,7 @@ const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
         </Stack>
       </Box>
       <Box flexBasis="0%" flexGrow={1} flexShrink={1} width="368px" maxW="368px" marginLeft="48px" marginTop="16px" paddingRight="16px">
-        <ProductDetail product={product}/>
+        <ShortDescription product={product}/>
       </Box>
     </Box>
   )
