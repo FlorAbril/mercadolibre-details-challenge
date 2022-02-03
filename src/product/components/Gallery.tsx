@@ -20,7 +20,7 @@ const Gallery: React.FC<Props> = ({product}) => {
             borderColor={currentImage === index ? "secondary.500" : "blackAlpha.400"}
             boxSize="48px" padding="2px"
             cursor="pointer"
-            onClick={() => {setCurrentImage(index)}}
+            onMouseEnter={() => {setCurrentImage(index)}}
             key={image.id}
           >
             <Image
