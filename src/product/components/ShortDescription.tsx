@@ -8,7 +8,6 @@ import {FaShippingFast} from "react-icons/fa";
 import {RiArrowGoForwardLine} from "react-icons/ri";
 import {IoIosArrowDown} from "react-icons/io";
 import {IoShieldCheckmarkOutline, IoTrophyOutline} from "react-icons/io5";
-import {GrTrophy} from "react-icons/gr";
 
 interface Props {
   product: Product;
@@ -32,7 +31,7 @@ const Header: React.FC<Props> = ({product}) => {
         <Icon as={isLiked ? BsHeartFill : BsHeart} color="secondary.500" width="22px" height="22px" onClick={()=>setIsLiked(isLiked => !isLiked)} cursor="pointer"/>
       </Box>
       <Box display="flex" alignItems="center">
-        <Rating rating={3.5}/>
+        <Rating rating={3.5} size="sm" margin="0 3px 0 0"/>
         <Text color="blackAlpha.600" fontSize="sm" marginLeft="5px">
           40 opiniones
         </Text>
