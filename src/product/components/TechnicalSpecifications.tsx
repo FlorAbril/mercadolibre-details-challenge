@@ -14,6 +14,7 @@ interface Props {
 }
 
 interface spec {
+  id: string;
   name: string;
   value_name: string;
 }
@@ -33,6 +34,7 @@ const TechnicalSpecifications: React.FC<Props> = ({product}) => {
             <Tr bg="white" _odd={{
               backgroundColor: "#f5f5f5",
             }}
+              key={spec.id}
             > 
               <Td bg={i%2 === 0 ? "#ebebeb" : "#f5f5f5"}>
                 <Text fontWeight="600" lineHeight="1.35">
@@ -55,7 +57,7 @@ const TechnicalSpecifications: React.FC<Props> = ({product}) => {
       </Text>
       <Grid gridTemplateColumns="repeat(2,1fr)">
         {secondarySpecs.map((spec:spec,i:number) => (
-          <GridItem fontSize="14px" mr="24px" mb="12px" ml="50px" _odd={{marginLeft:"0px"}}>
+          <GridItem  key={spec.id} fontSize="14px" mr="24px" mb="12px" ml="50px" _odd={{marginLeft:"0px"}}>
             <Box display="flex">
               <Text fontWeight="600" >
                 {spec.name}:
