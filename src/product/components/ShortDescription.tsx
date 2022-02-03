@@ -7,6 +7,8 @@ import Rating from "./Rating";
 import {FaShippingFast} from "react-icons/fa";
 import {RiArrowGoForwardLine} from "react-icons/ri";
 import {IoIosArrowDown} from "react-icons/io";
+import {IoShieldCheckmarkOutline, IoTrophyOutline} from "react-icons/io5";
+import {GrTrophy} from "react-icons/gr";
 
 interface Props {
   product: Product;
@@ -196,6 +198,47 @@ const MainActions: React.FC = () => {
   )
 }
 
+const BuyBenefits: React.FC = () => {
+  return( 
+    <Box mt="24px">
+      <List>
+        <ListItem mb="16px">
+          <Box display="flex" alignItems="flex-start">
+            <Icon as={IoShieldCheckmarkOutline} 
+              color="blackAlpha.600" 
+              width="16px" height="16px" 
+              mr="10px"
+              mt="1px"
+            />
+            <Text fontSize="14px" fontWeight="400" lineHeight="1.3" 
+              mb="2px" color="blackAlpha.600"
+            >
+              <Link>Compra protegida</Link>
+              , recibí el producto que esperabas o te devolvemos tu dinero.
+            </Text>
+          </Box>
+        </ListItem>
+        <ListItem>
+          <Box display="flex" alignItems="flex-start">
+            <Icon as={IoTrophyOutline} 
+              color="blackAlpha.600" 
+              width="16px" height="16px" 
+              mr="10px"
+              mt="1px"
+            />
+            <Text fontSize="14px" fontWeight="400" lineHeight="1.3" 
+              mb="2px" color="blackAlpha.600"
+            >
+              <Link>Mercado Puntos</Link>
+              . Sumás 47 puntos.
+            </Text>
+          </Box>
+        </ListItem>
+      </List>
+    </Box>
+  ) 
+}
+
 const ShortDescription: React.FC<Props> = ({product = mock.product}) => {
   return (
     <Box border="1px solid rgb(0 0 0 / 10%)" borderRadius={8} padding="24px 16px">
@@ -205,6 +248,7 @@ const ShortDescription: React.FC<Props> = ({product = mock.product}) => {
       <RetursSummary/>
       <Stock product={product}/>
       <MainActions/>
+      <BuyBenefits/>
     </Box>
   )
 }
