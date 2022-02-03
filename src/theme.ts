@@ -44,10 +44,6 @@ export default extendTheme({
       xl: "1200px",
     },
   },
-  fonts: {
-    body: "Proxima Nova",
-    heading: "Proxima Nova",
-  },
   components: {
     Link: {
       variants: {
