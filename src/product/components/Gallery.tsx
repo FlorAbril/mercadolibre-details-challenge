@@ -21,9 +21,9 @@ const Gallery: React.FC<Props> = ({product}) => {
             boxSize="48px" padding="2px"
             cursor="pointer"
             onClick={() => {setCurrentImage(index)}}
+            key={image.id}
           >
             <Image
-              key={image.id}
               src={image.secure_url}
               width="100%"
               height="100%"
