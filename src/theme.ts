@@ -35,6 +35,10 @@ export default extendTheme({
       800: "#2968c8",
       900: "#3483fa",
     },
+    blackAlpha: {
+      ...theme.colors.blackAlpha,
+      150: `rgba(0,0,0,.1)`,
+    },
     success: theme.colors.whatsapp,
     error: theme.colors.red,
     warning: theme.colors.orange,

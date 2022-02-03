@@ -123,61 +123,7 @@ export default {
       seller_contact: null,
       location: {},
       coverage_areas: [],
-      attributes: [
-        {
-          id: "MAX_RECOMMENDED_AGE",
-          name: "Edad máxima recomendada",
-          value_id: null,
-          value_name: "99 años",
-          value_struct: {
-            number: 99,
-            unit: "años",
-          },
-          values: [
-            {
-              id: null,
-              name: "99 años",
-              struct: {
-                number: 99,
-                unit: "años",
-              },
-            },
-          ],
-          attribute_group_id: "",
-          attribute_group_name: "",
-        },
-        {
-          id: "PRODUCT_TYPE",
-          name: "Tipo de producto",
-          value_id: null,
-          value_name: "peluche",
-          value_struct: null,
-          values: [
-            {
-              id: null,
-              name: "peluche",
-              struct: null,
-            },
-          ],
-          attribute_group_id: "",
-          attribute_group_name: "",
-        },
-        {
-          id: "ANIMAL",
-          name: "Animal",
-          value_id: null,
-          value_name: "stitch",
-          value_struct: null,
-          values: [
-            {
-              id: null,
-              name: "stitch",
-              struct: null,
-            },
-          ],
-          attribute_group_id: "OTHERS",
-          attribute_group_name: "Otros",
-        },
+      main_attributes: [
         {
           id: "BRAND",
           name: "Marca",
@@ -195,14 +141,14 @@ export default {
           attribute_group_name: "Otros",
         },
         {
-          id: "CHARACTER",
-          name: "Personaje",
-          value_id: "4959202",
+          id: "MODEL",
+          name: "Modelo",
+          value_id: null,
           value_name: "Stitch",
           value_struct: null,
           values: [
             {
-              id: "4959202",
+              id: null,
               name: "Stitch",
               struct: null,
             },
@@ -227,38 +173,50 @@ export default {
           attribute_group_name: "Otros",
         },
         {
-          id: "GTIN",
-          name: "Código universal de producto",
-          value_id: null,
-          value_name: "8480017059031",
+          id: "CHARACTER",
+          name: "Personaje",
+          value_id: "4959202",
+          value_name: "Stitch",
           value_struct: null,
           values: [
             {
-              id: null,
-              name: "8480017059031",
+              id: "4959202",
+              name: "Stitch",
               struct: null,
             },
           ],
           attribute_group_id: "OTHERS",
           attribute_group_name: "Otros",
-        },
+        }
+      ],
+      other_atributes: [
         {
-          id: "HEIGHT",
-          name: "Altura",
+          id: "PRODUCT_TYPE",
+          name: "Tipo de producto",
           value_id: null,
-          value_name: "100 cm",
-          value_struct: {
-            number: 100,
-            unit: "cm",
-          },
+          value_name: "peluche",
+          value_struct: null,
           values: [
             {
               id: null,
-              name: "100 cm",
-              struct: {
-                number: 100,
-                unit: "cm",
-              },
+              name: "peluche",
+              struct: null,
+            },
+          ],
+          attribute_group_id: "",
+          attribute_group_name: "",
+        },
+        {
+          id: "MATERIAL",
+          name: "Material",
+          value_id: "462324",
+          value_name: "Plush",
+          value_struct: null,
+          values: [
+            {
+              id: "462324",
+              name: "Plush",
+              struct: null,
             },
           ],
           attribute_group_id: "OTHERS",
@@ -297,16 +255,44 @@ export default {
           attribute_group_name: "Otros",
         },
         {
-          id: "MATERIAL",
-          name: "Material",
-          value_id: "462324",
-          value_name: "Plush",
-          value_struct: null,
+          id: "HEIGHT",
+          name: "Altura",
+          value_id: null,
+          value_name: "100 cm",
+          value_struct: {
+            number: 100,
+            unit: "cm",
+          },
           values: [
             {
-              id: "462324",
-              name: "Plush",
-              struct: null,
+              id: null,
+              name: "100 cm",
+              struct: {
+                number: 100,
+                unit: "cm",
+              },
+            },
+          ],
+          attribute_group_id: "OTHERS",
+          attribute_group_name: "Otros",
+        },
+        {
+          id: "WIDTH",
+          name: "Ancho",
+          value_id: null,
+          value_name: "50 cm",
+          value_struct: {
+            number: 50,
+            unit: "cm",
+          },
+          values: [
+            {
+              id: null,
+              name: "50 cm",
+              struct: {
+                number: 50,
+                unit: "cm",
+              },
             },
           ],
           attribute_group_id: "OTHERS",
@@ -335,15 +321,38 @@ export default {
           attribute_group_name: "Otros",
         },
         {
-          id: "MODEL",
-          name: "Modelo",
+          id: "MAX_RECOMMENDED_AGE",
+          name: "Edad máxima recomendada",
           value_id: null,
-          value_name: "Stitch",
+          value_name: "99 años",
+          value_struct: {
+            number: 99,
+            unit: "años",
+          },
+          values: [
+            {
+              id: null,
+              name: "99 años",
+              struct: {
+                number: 99,
+                unit: "años",
+              },
+            },
+          ],
+          attribute_group_id: "",
+          attribute_group_name: "",
+        },
+        
+        {
+          id: "GTIN",
+          name: "Código universal de producto",
+          value_id: null,
+          value_name: "8480017059031",
           value_struct: null,
           values: [
             {
               id: null,
-              name: "Stitch",
+              name: "8480017059031",
               struct: null,
             },
           ],
@@ -361,28 +370,6 @@ export default {
               id: null,
               name: "1metro",
               struct: null,
-            },
-          ],
-          attribute_group_id: "OTHERS",
-          attribute_group_name: "Otros",
-        },
-        {
-          id: "WIDTH",
-          name: "Ancho",
-          value_id: null,
-          value_name: "50 cm",
-          value_struct: {
-            number: 50,
-            unit: "cm",
-          },
-          values: [
-            {
-              id: null,
-              name: "50 cm",
-              struct: {
-                number: 50,
-                unit: "cm",
-              },
             },
           ],
           attribute_group_id: "OTHERS",

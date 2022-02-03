@@ -1,4 +1,4 @@
-import { Box, Icon, Text } from "@chakra-ui/react";
+import { Box, Icon } from "@chakra-ui/react";
 import React from "react";
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
