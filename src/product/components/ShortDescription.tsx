@@ -102,12 +102,12 @@ const Stock: React.FC<Props> = ({product}) => {
   const stock = product.available_quantity;
   const stockText = stock > 0 ? `${stock} disponibles` : `Agotado`;
   return(
-    <Box>
+    <Box cursor="pointer">
       <Text fontSize="16px" fontWeight="600" mt="32px" color="blackAlpha.900">
         Stock disponible
       </Text>
       <Box mt="20px">
-        <Box display="flex" onClick={()=>setOpen(!open)}>
+        <Box display="flex" alignItems="center" onClick={()=>setOpen(!open)}>
           <Text>Cantidad:</Text>
           <Text fontWeight="600" ml="4px">
             {`${selectedQuantity} unidad${selectedQuantity> 1 ? "es" : ""}`} 
