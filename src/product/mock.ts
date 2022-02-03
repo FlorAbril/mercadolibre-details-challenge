@@ -15,7 +15,7 @@ export default {
       original_price: null,
       currency_id: "ARS",
       initial_quantity: 76,
-      available_quantity: 1,
+      available_quantity: 4,
       sold_quantity: 50,
       sale_terms: [],
       buying_mode: "buy_it_now",
