@@ -10,6 +10,7 @@ export default extendTheme({
       body: {
         backgroundColor: "#ededed",
         color: "blackAlpha.900",
+        minWidth: "fit-content",
       },
     },
   },
