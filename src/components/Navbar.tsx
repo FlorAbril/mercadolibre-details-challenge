@@ -1,11 +1,10 @@
 import { SearchIcon } from "@chakra-ui/icons";
-import { Box, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, InputRightElement, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Icon, Image, Input, InputGroup, InputRightElement, List, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
 import {FiMapPin} from 'react-icons/fi'
 import { IoNotificationsOutline } from "react-icons/io5";
-import {MdArrowForwardIos, MdKeyboardArrowDown} from 'react-icons/md'
 import { RiArrowDownSLine } from "react-icons/ri";
 
 const Navbar: React.FC = () => {

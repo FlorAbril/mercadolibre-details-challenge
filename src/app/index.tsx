@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <Box>
         <Navbar/>
-        <Box>
+        <Box margin="0 auto" minW={800} w="fit-content">
           <Routes />
         </Box>
     </Box>
