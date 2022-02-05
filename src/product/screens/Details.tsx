@@ -13,7 +13,7 @@ interface Props {
 
 const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
   return (
-    <Box minW={800} w="88%" margin="0 auto" bg="white" borderRadius={4} boxShadow="base" display="flex"  paddingBottom="40px">
+    <Box minW={800} w="fit-content" margin="0 auto" bg="white" borderRadius={4} boxShadow="base" display="flex"  paddingBottom="40px">
       <Box flexBasis="0%" flexGrow={2} flexShrink={1}>
           <Gallery product={product} />
           <Box marginLeft="50px">

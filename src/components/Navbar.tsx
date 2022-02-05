@@ -1,7 +1,12 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import { Box, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, InputRightElement, List, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
+import { BsCart2 } from "react-icons/bs";
+import { FaRegUserCircle } from "react-icons/fa";
 import {FiMapPin} from 'react-icons/fi'
+import { IoNotificationsOutline } from "react-icons/io5";
+import {MdArrowForwardIos, MdKeyboardArrowDown} from 'react-icons/md'
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const Navbar: React.FC = () => {
   return(
@@ -64,22 +69,23 @@ const Navbar: React.FC = () => {
             /> 
           </InputGroup>
           <List fontSize={'14px'} lineHeight={'22px'} fontWeight={'400'} 
-            color={'#33333399'} pt={'12px'}
+            color={'#33333399'} pt={'12px'} display={'flex'}
             __css={{
               '& > li': {
                 paddingRight: "18px",
-                display: "inline-block",
+                display: "flex",
               },
-              '& p': {
+              '& *': {
                 cursor: 'pointer',
-                '&:hover': {
-                  color:"#333333e6"
-                }
+              },
+              '& p:hover': {
+                color:"#333333e6"
               }
             }}
           >
             <ListItem>
               <Text>Categorías</Text>
+              <Icon as={RiArrowDownSLine} h={'22px'} pt={'2px'} color={'blackAlpha.500'} ml={'3px'}/>
             </ListItem>
             <ListItem>
               <Text>Ofertas</Text>
@@ -102,28 +108,38 @@ const Navbar: React.FC = () => {
           </List>
         </Box>
         <Box minW={'295px'} h={'52px'} mt={'48px'} color={'#333'}>
-            <List fontSize={'14px'} lineHeight={'40px'}
+            <List fontSize={'14px'} lineHeight={'40px'} display={'flex'}
               __css={{
                 '& > li': {
-                  display: "inline-block",
+                  display: "flex",
                   paddingRight: "16px"
                 },
-                '& p': {
+                '& *': {
                   cursor: 'pointer',
-                  '&:hover': {
-                    color:"#000"
-                  }
+                  whiteSpace: 'nowrap',
+                },
+                '& p:hover': {
+                  color:"#000"
                 }
               }}
             >
               <ListItem>
+                 <Icon as={FaRegUserCircle} w={'20px'} h={'20px'} color={'#333'} mt={'10px'} mr={'6px'}/>
                 <Text>Usuario</Text>
+                <Icon as={RiArrowDownSLine} h={'44px'} pb={'2px'} color={'blackAlpha.500'} ml={'3px'}/>
               </ListItem>
               <ListItem>
                 <Text>Mis compras</Text>
               </ListItem>
               <ListItem>
                 <Text>Favoritos</Text>
+                <Icon as={RiArrowDownSLine} h={'44px'} pb={'2px'} color={'blackAlpha.500'} ml={'3px'}/>
+              </ListItem>
+              <ListItem>
+                <Icon as={IoNotificationsOutline} w={'20px'} h={'44px'} color={'#333'} pb={'4px'}/>
+              </ListItem>
+              <ListItem>
+                <Icon as={BsCart2} w={'20px'} h={'44px'} color={'#333'} pb={'4px'}/>
               </ListItem>
             </List>
         </Box>
