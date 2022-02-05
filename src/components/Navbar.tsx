@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             _hover={{borderColor:"#eadd61"}}
           >
             <Icon as={FiMapPin} w="18px" h="22px" mt="9px" color="blackAlpha.700"/>
-            <Text  overflow="hidden" pl="6px">
+            <Box  overflow="hidden" pl="6px">
               <Text fontSize="12px" color="blackAlpha.600" lineHeight="10px" 
                 h="20px" pt="6px"
               >
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
               >
                 Hernando de Magallanes 1979
               </Text>
-            </Text>
+            </Box>
           </Box>
         </Box>
         <Box w={'600px'} mr={'40px'}>
