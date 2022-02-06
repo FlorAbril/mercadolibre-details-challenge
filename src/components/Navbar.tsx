@@ -14,9 +14,10 @@ const Navbar: React.FC = () => {
       <Box maxW="1200px" margin="0 auto" p="8px 0" display="flex">
         <Box mr={'24px'}>
           <Image
-            src={imageUrl}
+            src='https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.7/mercadolibre/logo__large_plus.png'
             width="134px"
             height="34px"
+            objectFit={'cover'}
             mb="8px"
           />
           <Box w="170px" h="40px" p="0 8px" 
