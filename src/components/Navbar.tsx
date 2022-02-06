@@ -1,4 +1,3 @@
-import { SearchIcon } from "@chakra-ui/icons";
 import { Box, Icon, Image, Input, InputGroup, InputRightElement, List, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
@@ -6,6 +5,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import {FiMapPin} from 'react-icons/fi'
 import { IoNotificationsOutline } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
+import {AiOutlineSearch} from 'react-icons/ai'
 
 const Navbar: React.FC = () => {
   return(
@@ -52,7 +52,8 @@ const Navbar: React.FC = () => {
             />
             <InputRightElement  w={'46px'} cursor={'pointer'}
               children={
-                <SearchIcon 
+                <Icon
+                  as={AiOutlineSearch} 
                   color='blackAlpha.600' 
                   lineHeight={'21px'}
               />} 
