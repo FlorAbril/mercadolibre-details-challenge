@@ -6,6 +6,7 @@ import {FiMapPin} from 'react-icons/fi'
 import { IoNotificationsOutline } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
 import {AiOutlineSearch} from 'react-icons/ai'
+import imageUrl from '../assets/logo.png'
 
 const Navbar: React.FC = () => {
   return(
@@ -13,7 +14,7 @@ const Navbar: React.FC = () => {
       <Box maxW="1200px" margin="0 auto" p="8px 0" display="flex">
         <Box mr={'24px'}>
           <Image
-            src="/assets/logo.png"
+            src={imageUrl}
             width="134px"
             height="34px"
             mb="8px"
