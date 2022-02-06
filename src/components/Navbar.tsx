@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       <Box maxW="1200px" margin="0 auto" p="8px 0" display="flex">
         <Box mr={'24px'}>
           <Image
-            src="/src/assets/logo.png"
+            src="/assets/logo.png"
             width="134px"
             height="34px"
             mb="8px"
