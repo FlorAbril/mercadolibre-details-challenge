@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
               <Text fontSize="12px" color="blackAlpha.600" lineHeight="10px" 
                 h="20px" pt="6px"
               >
-                Enivar a Florencia
+                Enviar a Florencia
               </Text>
               <Text fontSize="14px" color="#333" lineHeight="13px" h="20px"
                 overflow="hidden" whiteSpace="nowrap" textOverflow="ellipsis"
