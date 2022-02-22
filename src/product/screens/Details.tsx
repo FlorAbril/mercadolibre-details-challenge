@@ -9,6 +9,7 @@ import TechnicalSpecifications from "../components/TechnicalSpecifications";
 import Header from "../components/Header";
 import Description from "../components/Description";
 import SellerInfo from "../components/SellerInfo";
+import Questions from "../components/Questions";
 
 interface Props {
   product: Product;
@@ -24,6 +25,7 @@ const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
           <Box marginLeft="50px">
             <TechnicalSpecifications product={product}/>
             <Description/>
+            <Questions/>
           </Box>
       </Box>
       <Box flexBasis="0%" flexGrow={1} flexShrink={1}  minW="325px" width="368px" maxW="368px" 

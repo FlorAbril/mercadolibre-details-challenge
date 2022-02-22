@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Box>
       <Banner />
       <Navbar/>
-      <Box margin="0 auto" minW={800} w="fit-content">
+      <Box margin="0 5rem" minW={800} w="fit-content">
         <Routes />
       </Box>
     </Box>

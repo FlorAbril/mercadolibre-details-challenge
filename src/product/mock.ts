@@ -401,6 +401,45 @@ export default {
       health: 0.88,
       catalog_listing: false,
       channels: ["marketplace"],
+      quick_questions: [
+        {
+          title: "Costo y tiempo de envío"
+        },
+        {
+          title: "Devoluciones gratis"
+        },
+        {
+          title: "Medios de pago y promociones"
+        },
+        {
+          title: "Garantía"
+        },
+        {
+          title: "Cuotas sin tarjeta"
+        }
+      ],
+      questions: [
+        {
+          question: "Cuál es el costo de envío?",
+          answer: "Hola el costo de envío se calcula cuando hacés la compra.",
+          answer_date: "20/01/2022",
+        },
+        {
+          question: "Hola! Cuál es el tiempo de envío?",
+          answer: "Hola! A partir de 1 día hábil",
+          answer_date: "20/01/2022",
+        },
+        {
+          question: "Hacés envíos a todo el país?",
+          answer: "Hola! Sí hacemos envíos a todo el país",
+          answer_date: "20/01/2022",
+        },
+        {
+          question: "Puedo devolver el producto?",
+          answer: "Hola! Sí, puedes devolver el producto en un plazo de 30 días",
+          answer_date: "20/01/2022",
+        },
+      ]
     };
   },
 };
